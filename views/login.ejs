@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #f7faf9; }
+    .card { width: 100%; max-width: 420px; box-shadow: 0 10px 25px rgba(0,0,0,.08); border: 0; }
+    .btn-primary { background: #16a34a; border-color: #16a34a; }
+    .btn-primary:hover { background: #15803d; border-color: #15803d; }
+  </style>
+  </head>
+<body>
+  <div class="card p-4">
+    <h3 class="mb-3">Admin Login</h3>
+    <% if (error) { %>
+      <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <form method="post" action="/admin/login">
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input class="form-control" name="username" required />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" required />
+      </div>
+      <button class="btn btn-primary w-100" type="submit">Sign in</button>
+    </form>
+  </div>
+</body>
+</html>
+
+

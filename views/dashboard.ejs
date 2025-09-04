@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <style>
+    .navbar { background: #16a34a; }
+    .navbar .navbar-brand, .navbar a, .navbar .nav-link { color: #fff; }
+    .table thead th { background: #f0fdf4; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Admin</a>
+      <div class="d-flex align-items-center">
+        <span class="me-3">Hello, <%= username %></span>
+        <a href="/admin/logout" class="btn btn-light btn-sm">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3 class="mb-3">Contact Messages</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+            <th>Created At</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (messages && messages.length) { %>
+            <% messages.forEach(function(m) { %>
+              <tr>
+                <td><%= m.id %></td>
+                <td><%= m.name %></td>
+                <td><%= m.email %></td>
+                <td><%= m.phone || '' %></td>
+                <td style="white-space: pre-wrap"><%= m.message || '' %></td>
+                <td><%= m.created_at %></td>
+              </tr>
+            <% }) %>
+          <% } else { %>
+            <tr><td colspan="6" class="text-center">No messages yet.</td></tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+
+
