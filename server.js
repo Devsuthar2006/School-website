@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Paths
 const DB_PATH = path.join(__dirname, 'data.sqlite');
