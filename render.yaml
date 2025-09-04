@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: school-website
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: PORT
+        value: 10000
+
