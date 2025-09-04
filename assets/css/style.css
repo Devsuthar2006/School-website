@@ -796,7 +796,6 @@ p {
 .fa-arrows-h:before {
   content: "\f07e";
 }
-
 .fa-bar-chart-o:before,
 .fa-bar-chart:before {
   content: "\f080";
@@ -1597,7 +1596,6 @@ p {
 .fa-krw:before {
   content: "\f159";
 }
-
 .fa-bitcoin:before,
 .fa-btc:before {
   content: "\f15a";
@@ -2396,6 +2394,26 @@ p {
   content: "\f227";
 }
 
+.creator {
+  margin: 20px 0 0;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+.creator-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.creator-info { color: #fff; }
+.creator-name { font-weight: 600; }
+.creator-links a { color: #fff; margin-right: 10px; font-size: 20px; }
+.creator-links a:hover { color: #86efac; }
 .fa-venus-mars:before {
   content: "\f228";
 }
@@ -3188,7 +3206,6 @@ p {
 .w3l-top-menu-2 #logo a img {
   height: 30px;
 }
-
 @media (max-width: 736px) {
   .w3l-top-menu-2 .header-main {
     padding: 20px 0;
@@ -3978,7 +3995,6 @@ p {
     top: 90%;
   }
 }
-
 @media (max-width: 480px) {
   .w3l-hero-header-1 .header-main label {
     right: 30px;
@@ -4776,7 +4792,6 @@ p {
 .w3l-services-1 .column a img {
   display: block;
 }
-
 .w3l-services-1 .service-info h4 {
   font-size: 20px;
   line-height: 25px;
@@ -5576,7 +5591,6 @@ p {
   font-size: 17px;
   line-height: 25px;
 }
-
 .w3l-form-3 .form-text input {
   width: 100%;
   font-size: 15px;
@@ -6374,7 +6388,6 @@ p {
   border: 1px solid #eee;
   background: #fffdfc;
 }
-
 .w3l-features-12 .text-center {
   text-align: center;
   margin-top: 60px;
@@ -7170,7 +7183,6 @@ p {
 .w3l-text-22 .right-column p:nth-child(even) {
   margin: 20px 0;
 }
-
 @media (max-width: 1080px) {
   .w3l-text-22 .text {
     padding: 40px 0px;
@@ -7969,7 +7981,6 @@ p {
     grid-gap: 20px;
   }
 }
-
 @media (max-width: 440px) {
   .w3l-text-30 .text-styles-30_sur h3 {
     font-size: 32px;
@@ -8770,7 +8781,6 @@ p {
   border: 1px solid #eee;
   padding: 2rem;
 }
-
 .w3l-form34 .signin {
   box-sizing: border-box;
   padding: 10px;
@@ -9568,7 +9578,6 @@ p {
   margin-top: 15px;
   display: inline-block;
 }
-
 .w3l-products-7 .products-top_sur {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -10366,7 +10375,6 @@ p {
   padding: 10px 0;
   font-weight: bold;
 }
-
 .w3l-new-block-9 .checkout-right-basket {
   float: left;
   margin: 3em 0em 0em;
@@ -11157,7 +11165,6 @@ p {
     font-size: 35px;
   }
 }
-
 @media (max-width: 500px) {
   .w3l-new-block-5 .middle {
     padding-top: 3.5rem;
