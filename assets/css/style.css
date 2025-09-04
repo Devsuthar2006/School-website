@@ -2395,13 +2395,15 @@ p {
 }
 
 .creator {
-  margin: 20px 0 0;
+  margin: 20px auto 0;
   padding: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 14px;
   background: rgba(255,255,255,0.1);
   border-radius: 10px;
+  max-width: 520px;
 }
 .creator-avatar {
   width: 52px;
