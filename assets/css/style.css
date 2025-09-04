@@ -1,5 +1,5 @@
 :root {
-  --theme-color: #dd70a1;
+  --theme-color: #16a34a;
   --text-color: #666666;
   --title-color: #333333;
 }
@@ -4868,7 +4868,7 @@ p {
 .w3l-customer-3 .customers3 {
   padding: 4.5rem 0;
   background: #eee;
-  background: url(./../../images/school.jpg) no-repeat 0px 0px;
+  background: url(./../../assembly2.jpg) no-repeat 0px 0px;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -11904,7 +11904,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.603) 5px 10px 17px 5px;
 }
 .content{
-  background: linear-gradient(90deg, #b41b8e, #f2a3b5);
+  background: linear-gradient(90deg, #166534, #86efac);
 }
 .wrapper{
   padding-top: 40px;
